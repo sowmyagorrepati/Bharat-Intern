@@ -1,0 +1,230 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(./images/sky.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    position: relative;
+    width: 400px;
+    height: 555px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(30px);
+    border: 2px solid rgb(178, 137, 179, 0.1);
+    box-shadow: 0 0 10px #b289b3;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.searchcontainer {
+    display: flex;
+    align-items: center;
+    border: 2px solid #b289b3;
+    box-shadow: 0 0 10px #b289b3;
+    width: 100%;
+    height: 55px;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+
+.searchcontainer i {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.searchcontainer input {
+    flex-grow: 1;
+    background: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    padding: 0 10px;
+    color: black;
+}
+
+.searchcontainer input::placeholder {
+    color: black;
+    text-transform: capitalize;
+}
+
+.searchcontainer button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+}
+
+.weathercontainer img {
+    width: 60%;
+    margin: 20px 0;
+}
+
+.weathercontainer {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.weathercontainer .temp {
+    position: relative;
+    font-size: 54px;
+    line-height: 1;
+    font-weight: bold;
+}
+
+.weathercontainer .temp span {
+    position: absolute;
+    font-size: 24px;
+    margin-left: 4px;
+    font-weight: bold;
+}
+
+.weathercontainer .content {
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.weathercontainer .location,
+.weathercontainer .date {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.details {
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+}
+
+.details .humi,
+.details .wind {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.details .humi {
+    padding-left: 20px;
+    justify-content: flex-start;
+}
+
+.details .wind {
+    padding-right: 20px;
+    justify-content: flex-end;
+}
+
+.details i {
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+.details span {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+@keyframes slideInFromTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate {
+    animation: slideInFromTop 0.5s ease-out forwards;
+}
+
+.weathercontainer.animate,
+.details .humi.animate,
+.details .wind.animate {
+    animation: slideInFromTop 0.5s ease-out forwards;
+}
+@media (max-width: 400px) {
+    .container {
+        width: 100%;
+        height: 500px;
+        padding: 10px;
+    }
+
+    .searchcontainer {
+        height: 45px;
+        padding: 0 5px;
+    }
+
+    .searchcontainer i, 
+    .searchcontainer input, 
+    .searchcontainer button {
+        font-size: 16px;
+    }
+
+    .weathercontainer img {
+        width: 50%;
+        margin: 15px 0;
+    }
+
+    .weathercontainer .temp {
+        font-size: 44px;
+    }
+
+    .weathercontainer .temp span {
+        font-size: 18px;
+    }
+
+    .weathercontainer .content {
+        font-size: 18px;
+        margin-bottom: 5px; 
+    }
+
+    .weathercontainer .location, 
+    .weathercontainer .date {
+        font-size: 14px;
+    }
+
+    .details {
+        flex-direction: row;
+        justify-content: space-between;
+        bottom: 20px;
+        padding: 0 10px;
+    }
+
+    .details .humi, 
+    .details .wind {
+        width: auto;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .details i {
+        font-size: 30px;
+        margin-right: 5px;
+    }
+
+    .details span {
+        font-size: 18px;
+    }
+}
