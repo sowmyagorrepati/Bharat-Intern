@@ -1,0 +1,293 @@
+@media screen and (max-width: 889px) {
+    .feature {
+        flex-direction: column;
+        padding: 2rem 0;
+    }
+
+    .feature.feature2,
+    .feature.feature4 {
+        flex-direction: column-reverse;
+    }
+    .feature-heading {
+        text-align: center;
+    }
+    .feature-subheading {
+        text-align: center;
+    }
+
+    .details {
+        padding: 0 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .featureimg {
+        padding: 0 1rem;
+    }
+
+    .feature-video {
+        width: 100%;
+    }
+
+    .feature3-bg-video {
+        max-width: 60%;
+    }
+
+    .fea2-container {
+        left: 24%;
+    }
+
+    .fea2img img {
+        width: 50px;
+        height: 60px;
+        margin-right: 10px;
+    }
+
+    .fea2-details h4 {
+        font-size: 24px;
+    }
+
+    .fea2-details h6 {
+        font-size: 14px;
+    }
+
+    .gif {
+        width: 50px;
+    }
+}
+
+@media screen and (max-width:810px) {
+    .faq-que-content {
+        max-width:700px;
+    }
+    .faq-ans{
+        max-width: 700px;
+    } 
+}
+@media screen and (max-width:706px) {
+    .faq-que-content {
+        max-width:600px;
+    }
+    .faq-ans{
+        max-width: 600px;
+    } 
+}
+@media screen and (max-width: 671px) {
+    .content h1 {
+        font-size: 2.5rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .description {
+        font-size: 0.875rem;
+    }
+
+    button {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+    }
+}
+@media screen and (max-width: 631px){
+
+    .feature-heading {
+        font-size: 25px;
+    }
+    .feature-subheading {
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .faq-que-content {
+        max-width:500px;
+    }
+    .faq-ans{
+        max-width: 500px;
+    } 
+}
+@media screen and (max-width: 611px) {
+
+    .navbar {
+        padding: 2% 3%;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .logo img {
+        width: 100%;
+    }
+
+    .navitems {
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    .signin-btn {
+        padding: 0.2rem 0.4rem;
+        font-size: 0.8rem;
+    }
+
+    .language {
+        padding: 0.3rem;
+    }
+
+    #lang {
+        font-size: 0.8rem;
+    }
+    .content h1 {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .description {
+        font-size: 0.875rem;
+    }
+
+    .email input[type="email"] {
+        font-size: 0.875rem;
+        padding: 0.75rem 0.75rem;
+        width: 200px;
+    }
+
+    button {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+    }
+    .feature-heading {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .feature-subheading {
+        font-size: 10px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .featureimg,
+    .feature-image,
+    .featureimg2,
+    .featureimg4 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .fea2img img {
+        width: 50px;
+        height: 60px;
+        margin-right: 0;
+    }
+
+    .gif {
+        width: 50px;
+        margin-left: 0;
+    }
+
+    .faq-email h3 {
+        font-size: 15px;
+        font-weight: 400;
+    }
+}
+@media screen and (max-width:510px) {
+    .faq-que-content {
+        max-width:400px;
+    }
+    .faq-ans{
+        max-width: 400px;
+    } 
+    .fea2-container {
+        left: 20%;
+        padding: 10px;
+    }
+}
+@media screen and (max-width:475px) {
+    .fea2-container {
+        left: 15%;
+    }
+}
+@media screen and (max-width:445px) {
+    .fea2-container {
+        left: 10%;
+    }
+}
+@media screen and (max-width:400px) {
+    .faq-que-content {
+        max-width:300px;
+    }
+    .faq-ans{
+        max-width: 300px;
+    } 
+    .fea2img img {
+        width: 40px;
+        height: 50px;
+        margin-right: 0;
+    }
+    .gif {
+        width: 40px;
+        margin-left: 0;
+    }
+    .fea2-details h4 {
+        font-size: 20px;
+    }
+    .fea2-details h6 {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 336px) {
+    .content h1 {
+        font-size: 2rem; 
+    }
+
+    .subtitle {
+        font-size: 0.875rem; 
+    }
+
+    .email {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .email input[type="email"] {
+        width: 100%; 
+        margin-bottom: 1rem; 
+    }
+
+    .container {
+        flex-direction: column; 
+    }
+
+    .container button {
+        margin-top: 1rem; 
+    }
+
+    .fea2-container {
+        left: 15%; 
+        padding: 5px; 
+    }
+
+    .fea2img img {
+        width: 40px;
+        height: 50px; 
+        margin-right: 0;
+    }
+    .gif {
+        width: 40px; 
+        margin-left: 0; 
+    }
+    .fea2-details h4 {
+        font-size: 20px; 
+    }
+
+    .fea2-details h6 {
+        font-size: 12px; 
+    }
+    .faq-que-content,
+    .faq-ans {
+        max-width: 300px; 
+    }
+}

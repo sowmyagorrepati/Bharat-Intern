@@ -1,0 +1,375 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #dc030f;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 5%;
+    z-index: 10;
+}
+
+.logo {
+    height: 100%;
+    width: 170px;
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+}
+
+.navitems {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.408);
+    padding: 0.4rem;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+#lang {
+    background: transparent;
+    border: none;
+    color: white;
+    margin-left: 5px;
+    font-weight: bold;
+}
+#lang option {
+    background-color: white;
+    color: black;
+}
+.language:focus-within {
+    border: 2px solid white;
+}
+
+.signin-btn {
+    font-weight: bold;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+    height: 31px;
+}
+
+/* Home */
+.bg {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./img/netflix-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.76);
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+}
+
+.content h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.description {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.container {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    justify-content: center;
+}
+
+.email {
+    position: relative;
+}
+
+.email input[type="email"] {
+    padding: 1rem 1rem;
+    color: white;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.11);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+    width: 300px;
+    transition: all 0.2s ease;
+}
+
+.email input[type="email"]::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+.email input[type="email"]:focus {
+    outline: none;
+    border: 2px solid white;
+}
+
+.email input[type="email"]:focus::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-10px);
+    font-size: 0.8rem;
+}
+
+button {
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.bg-btn {
+    font-weight: 600;
+}
+
+/* Feature section */
+.feature {
+    border-top: 8px solid #222;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.details {
+    flex: 1;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    color: white;
+}
+
+.feature-heading {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.feature-subheading {
+    font-size: 20px;
+    font-weight:400;
+    text-align: left;
+}
+
+.featureimg {
+    flex: 1;
+    position: relative;
+}
+
+.feature-image {
+    width: 100%;
+}
+
+.feature-bg-video {
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    left: 13%;
+    height: 100%;
+    max-width: 73%;
+    max-height: 54%;
+    z-index: -2;
+}
+
+.feature-video {
+    width: 100%;
+}
+
+.fea2-container{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    padding: 15px;
+    background-color: black;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    bottom: 8%;
+    left: 17.5%;
+}
+.fea2img img{
+    width: 70px;
+    height:80px;
+    margin-right: 15px;
+}
+.fea2-details h4{
+    font-weight:bold;
+    font-size: 28px;
+}
+.fea2-details h6{
+    font-size: 12px;
+    color: blue;
+}
+.gif{
+    margin-left: 15px;
+    width: 60px;
+}
+.feature3-bg-video{
+    max-width: 63%;
+    max-height: 47%;
+    z-index: -2;
+    top: 9%;
+    left: 19%;
+  }
+  /*faq*/
+  .faq-container {
+    border-top: 8px solid #222;
+    padding: 2rem 0;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+.faq-que{
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .faq-que-content {
+    width: 100%;
+    max-width: 800px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px; 
+    font-size: 18px;
+    background-color: #303030;
+    border: 1px solid #303030;
+    color: white;
+    margin: 0 auto;
+  }
+  
+  
+  .faq-ans {
+    width: 100%;
+    max-width: 800px;
+    background-color: #303030;
+    border-top: 1px solid black;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .faq-ans >  p {
+    margin: 1rem;
+  }
+  .faq-container h1 {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    margin: 1rem 3rem;
+  }
+  
+  .faq-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .faq-email {
+    text-align: center;
+  }
+  
+  .faq-email h3 {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 2rem 0;
+  }
+
+  /*footer*/
+  footer {
+    border-top: 8px solid #333;
+    padding: 2rem 1rem;
+    color: #757575;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .footer-row2 {
+    display: flex;
+    font-size: 13px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  
+  .footer-row1 > h4 {
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 25px;
+  }
+  
+  .footer-row3 > .dropdown-container {
+    width: fit-content;
+    border: 1px solid #757575;
+    color: #757575;
+  }
+  
+  .footer-row3 > .dropdown-container > .language-dropdown {
+    color: #757575;
+  }
+  
